@@ -1,0 +1,298 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.friends-container, .chats-container, .chat-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: #555;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+form input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 80%;
+    padding: 10px;
+    background-color: #166dc9;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #007BFF;
+    display: block;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+.chat-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #fafafa;
+    border-radius: 10px;
+}
+
+.message {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+}
+
+.friend {
+    background-color: #6792c4;
+    text-align: left;
+}
+
+.you {
+    background-color: #c7eaff;
+    text-align: right;
+}
+
+.chat-container form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.chat-container form input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+chat-container form button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.chat-container form button:hover {
+    background-color: #0056b3;
+}
+
+
+.container {
+    display: flex;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    float: left;
+    width: 30%;
+    
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .nav {
+    background-color: white;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .nav__list {
+    list-style-type: none;
+    padding: 0;
+    /* background-color: #6792c4; */
+  }
+  .nav__icon {
+    width: 30px;
+    height: auto;
+  }
+  .nav__btn {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .nav__btn i {
+    color: white;
+  }
+  
+  .active {
+    background-color: #555;
+  }
+  
+  .friends-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .friends-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .friend-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+  }
+  
+  .friend-item .friend-name {
+    flex-grow: 1;
+    margin-left: 10px;
+  }
+  
+  .friend-item .mint-box {
+    width: 10px;
+    height: 10px;
+    background-color: #5CC7B2; 
+    margin-right: 10px;
+  }
+
+  .main-content {
+    float: right;
+    width: 70%;
+  }
+  
+  .main-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .preview-list {
+    padding: 10px;
+  }
+  
+  .preview {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .preview:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .preview__nick {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .preview__message {
+    color: #777;
+    margin-bottom: 5px;
+  }
+  
+  .preview__time {
+    color: #999;
+    font-size: 0.8rem;
+  }
+
+  .chat-icon {
+    width: 40px; 
+    height: auto;
+  }
